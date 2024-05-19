@@ -77,7 +77,7 @@ place_order = True
 while place_order:
 
     # Ask the customer from which menu category they want to order
-    print("\nFrom which menu category would you like to order? ")
+    print("\nFrom which menu category would you like to order?\n")
 
     # Create a variable for the menu category number
     category_counter: int = 1
@@ -94,7 +94,7 @@ while place_order:
         category_counter += 1
 
     # Get the customer's numeric input
-    menu_category_num = input("Type menu category number: ")
+    menu_category_num = input("\nType menu category number: ")
 
     # Check if the customer's input is a number
     if menu_category_num.isdigit():
@@ -103,10 +103,10 @@ while place_order:
             # Save the menu category name to a variable
             menu_category_name = menu_categories[int(menu_category_num)]
             # Print out the menu category name they selected
-            print(f"\nYou selected {menu_category_name}")
+            print(f"\nYou selected {menu_category_name}.")
 
             # Print out the menu options from the menu_category_name
-            print(f"What {menu_category_name} item would you like to order?")
+            print(f"What {menu_category_name} item would you like to order?\n")
             item_counter = 1
             menu_items: dict[int, dict[str, float]] = {}
             print("Item # | Item name                | Price")
@@ -138,7 +138,7 @@ while place_order:
                     item_counter += 1
 
             # 2. Ask customer to input menu item number
-            selected_item_str = input("Enter the item # you want to order: ")
+            selected_item_str = input("\nEnter the item # you want to order: ")
 
             # 3. Check if the customer typed a number
             if selected_item_str.isdigit():
@@ -215,7 +215,7 @@ if len(order_list) <= 0:
     exit()
 
 # Print out the customer's order
-print("\nThis is what we are preparing for you.\n")
+print("\nThis is what we are preparing for you:\n")
 
 # Uncomment the following line to check the structure of the order
 # print(order_list)
