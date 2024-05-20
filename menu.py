@@ -154,7 +154,7 @@ while place_order:
 
                     # Ask the customer for the quantity of the menu item
                     item_quantity_str = input(
-                        f"How many {item_name}s would you like?")
+                        f"How many {item_name}s would you like? ")
 
                     # Check if the quantity is a number, default to 1 if not
                     if item_quantity_str.isdigit():
